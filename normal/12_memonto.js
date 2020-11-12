@@ -39,7 +39,6 @@ class Test extends ImemontoState{
     }
 
     show(){
-        debugger
         console.log(`${this.name} - ${this.value}`)
     }
 
@@ -63,7 +62,6 @@ tempTest.show()
 
 tempTest.refreshState()
 tempTest.show()
-debugger
 tempTest.revokeState()
 tempTest.refreshState()
 tempTest.show()
