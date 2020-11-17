@@ -2,7 +2,7 @@
 //作为卖家不具备物流送货的能力，但是可以通过联系物流公司来帮忙完成送货任务
 //本身不具备某种能力，但可以委托的方式来实现，让委托来代替自身缺少的功能
 
-class IDelegate{
+class ADelegate{
     constructor(name){
         this.name = name
     }
@@ -16,7 +16,7 @@ class IDelegate{
     }
 }
 
-class Delegate extends IDelegate{
+class Delegate extends ADelegate{
     constructor(name){
         super(name)
     }

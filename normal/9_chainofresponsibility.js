@@ -2,7 +2,7 @@
 // 用来连接一连串的处理任务，页可以将复杂的任务分解为多个处理任务，可以灵活的添加、修改、删除其中的处理任务
 // 组合处理任务，构建责任链
 
-class IResponsibility{
+class AResponsibility{
     constructor(nextResponsibility){
         this.nextResponsibility = nextResponsibility
     }
@@ -20,7 +20,7 @@ class IResponsibility{
     }
 }
 
-class ResponsibilityA extends IResponsibility{
+class ResponsibilityA extends AResponsibility{
     
     constructor(nextResponsibility){
         super(nextResponsibility)
@@ -34,7 +34,7 @@ class ResponsibilityA extends IResponsibility{
     }
 }
 
-class ResponsibilityB extends IResponsibility{
+class ResponsibilityB extends AResponsibility{
     constructor(nextResponsibility){
         super(nextResponsibility)
     }
@@ -47,7 +47,7 @@ class ResponsibilityB extends IResponsibility{
     }
 }
 
-class ResponsibilityC extends IResponsibility{
+class ResponsibilityC extends AResponsibility{
     constructor(nextResponsibility){
         super(nextResponsibility)
     }

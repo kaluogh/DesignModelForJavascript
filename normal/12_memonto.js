@@ -1,7 +1,7 @@
 // 备忘录设计模式
 // 备忘录设计模式也可以理解为一种备份设计模式， 用来进行对象内部状态的备份。 当然，备份的可能并不是完整的对象， 我们在使用文本编辑器时可以撤销， 浏览网页时可以返回， 都是备忘录模式的实际应用。
 
-class ImemontoState{
+class AmemontoState{
     constructor(){
         this._stateArray = []
     }
@@ -23,7 +23,7 @@ class ImemontoState{
     }
 }
 
-class Test extends ImemontoState{
+class Test extends AmemontoState{
     constructor(name, value){
         super()
         this.name = name
